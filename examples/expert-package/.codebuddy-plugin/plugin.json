@@ -1,0 +1,42 @@
+{
+  "name": "xiezhi-engine",
+  "version": "1.0.0",
+  "description": "A WorkBuddy-native multi-model orchestration expert with evidence tracking and bounded review.",
+  "author": {
+    "name": "Xiezhi Engine Contributors",
+    "email": "maintainers@example.com"
+  },
+  "agents": ["./agents/xiezhi-engine.md"],
+  "skills": ["./skills/xiezhi-engine"],
+  "expertType": "agent",
+  "agentName": "xiezhi-engine",
+  "displayName": {
+    "en": "Xiezhi Engine",
+    "zh": "协智引擎"
+  },
+  "profession": {
+    "en": "Multi-Model Orchestration Director",
+    "zh": "多模型协同调度官"
+  },
+  "displayDescription": {
+    "en": "Orchestrates WorkBuddy built-in models by specialty, with traceable evidence, independent review and bounded repair.",
+    "zh": "使用内置积分模型，按专长并行派发，完成八阶段编排、证据留痕、独立复核与有限返修。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "04-DataAI",
+  "defaultInitPrompt": {
+    "zh": "用协智引擎标准档处理这个任务，并生成运行报告。",
+    "en": "Run this task with the Xiezhi Engine standard mode and generate a run report."
+  },
+  "plugin": "xiezhi-engine",
+  "tags": [
+    { "en": "Model Orchestration", "zh": "多模型编排" },
+    { "en": "Evidence Review", "zh": "证据复核" },
+    { "en": "Efficient Delivery", "zh": "高效交付" }
+  ],
+  "quickPrompts": [
+    { "en": "Run this task with the Xiezhi Engine standard mode and generate a run report.", "zh": "用协智引擎标准档处理这个任务，并生成运行报告。" },
+    { "en": "Review this proposal in strict mode and preserve all evidence and disagreements.", "zh": "按严谨档复核这份方案，保留所有分歧与证据。" },
+    { "en": "Handle this small clear task in fast mode without launching extra experts.", "zh": "用极速档完成这个明确小任务，不要启动额外专家。" }
+  ]
+}

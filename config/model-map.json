@@ -1,0 +1,173 @@
+{
+  "schema": 1,
+  "version": "2026-11-09-local-v1",
+  "runtime": "workbuddy_native",
+  "billing": "workbuddy_credits",
+  "externalModelApiAllowed": false,
+  "automaticModelFallback": false,
+  "catalogPath": "config/model-catalog.json",
+  "roles": {
+    "sol_controller": {
+      "agentName": "xiezhi-sol",
+      "displayName": "Kimi-K3.1-Pro",
+      "modelId": "kimi-k3.1-pro",
+      "family": "Moonshot Kimi",
+      "assignment": "全局协调、复杂长程 Agent、安全检查、最终裁定与交付",
+      "tools": ["Read", "Write", "Edit", "Glob", "Grep", "Bash"]
+    },
+    "requirements_analyst": {
+      "agentName": "xiezhi-analyst",
+      "displayName": "GLM-5.3",
+      "modelId": "glm-5.3",
+      "family": "Zhipu GLM",
+      "assignment": "多约束拆解、长程依赖分析、验收标准与多方案比较",
+      "tools": ["Read", "Glob", "Grep", "WebFetch", "WebSearch", "Bash"]
+    },
+    "luna_router": {
+      "agentName": "xiezhi-router",
+      "displayName": "GLM-5.3-Flash",
+      "modelId": "glm-5.3-flash",
+      "family": "Zhipu GLM",
+      "assignment": "DAG 路由、最小任务交接、状态整理与结构化汇总",
+      "tools": ["Read", "Write", "Glob", "Grep", "Bash"]
+    },
+    "fast_executor": {
+      "agentName": "xiezhi-fast",
+      "displayName": "DeepSeek-V4.1-Flash",
+      "modelId": "deepseek-v4.1-flash",
+      "family": "DeepSeek",
+      "assignment": "日常问答、短文案、明确判据的短任务与低成本执行",
+      "tools": ["Read", "Write", "Edit", "Glob", "Grep", "Bash"]
+    },
+    "long_context_deep_checker": {
+      "agentName": "xiezhi-deep-checker",
+      "displayName": "DeepSeek-V4-Pro",
+      "modelId": "deepseek-v4-pro",
+      "family": "DeepSeek",
+      "assignment": "超长材料、复杂推理、来源一致性与复杂证据检查",
+      "tools": ["Read", "Glob", "Grep", "WebFetch", "WebSearch", "Bash"]
+    },
+    "coding_executor": {
+      "agentName": "xiezhi-coding",
+      "displayName": "Kimi-K2.8-Preview",
+      "modelId": "kimi-k2.8-preview",
+      "family": "Moonshot Kimi",
+      "assignment": "代码生成、调试、重构、测试与长文开发材料理解",
+      "tools": ["Read", "Write", "Edit", "Glob", "Grep", "Bash"]
+    },
+    "office_data_executor": {
+      "agentName": "xiezhi-office",
+      "displayName": "MiniMax-M3.1-Flash",
+      "modelId": "minimax-m3.1-flash",
+      "family": "MiniMax",
+      "assignment": "Excel、数据分析、PPT、工具型智能体任务与通用代码执行",
+      "tools": ["Read", "Write", "Edit", "Glob", "Grep", "Bash"]
+    },
+    "chinese_writer": {
+      "agentName": "xiezhi-chinese",
+      "displayName": "Hy4",
+      "modelId": "hy4free",
+      "family": "Tencent Hunyuan",
+      "assignment": "中文写作、会议纪要、中文文档处理与办公内容生成",
+      "tools": ["Read", "Write", "Edit", "Glob", "Grep", "Bash"]
+    },
+    "visual_document_executor": {
+      "agentName": "xiezhi-visual",
+      "displayName": "Kimi-K2.8-Preview",
+      "modelId": "kimi-k2.8-preview",
+      "family": "Moonshot Kimi",
+      "assignment": "截图分析、图片转文档、视觉材料与长文材料联合处理",
+      "tools": ["Read", "Write", "ViewImage", "Glob", "Grep", "Bash"]
+    },
+    "multimodal_reviewer": {
+      "agentName": "xiezhi-multimodal-reviewer",
+      "displayName": "MiniMax-M3.1-Flash",
+      "modelId": "minimax-m3.1-flash",
+      "family": "MiniMax",
+      "assignment": "视觉严谨档的图片、截图、图表与多模态结论独立交叉检查",
+      "tools": ["Read", "ViewImage", "Glob", "Grep", "Bash"]
+    },
+    "business_reviewer": {
+      "agentName": "xiezhi-business-reviewer",
+      "displayName": "Hy4",
+      "modelId": "hy4free",
+      "family": "Tencent Hunyuan",
+      "assignment": "新上下文下按原需求和验收判据复核汇总产物",
+      "tools": ["Read", "Glob", "Grep", "Bash"]
+    }
+  },
+  "defaultMainChain": [
+    "sol_controller",
+    "requirements_analyst",
+    "luna_router",
+    "on_demand_specialists",
+    "luna_router",
+    "sol_controller",
+    "business_reviewer",
+    "sol_controller"
+  ],
+  "modes": {
+    "fast": {
+      "stages": ["coordinate", "execute", "adjudicate"],
+      "maxParallelExperts": 1,
+      "maxRevisions": 0,
+      "reviewLevel": "role_review"
+    },
+    "standard": {
+      "stages": ["coordinate", "analyze", "route", "execute", "collect", "safety", "review", "adjudicate"],
+      "maxParallelExperts": 2,
+      "maxRevisions": 1,
+      "reviewLevel": "context_review"
+    },
+    "strict": {
+      "stages": ["coordinate", "analyze", "route", "execute", "collect", "safety", "review", "adjudicate"],
+      "maxParallelExperts": 4,
+      "maxRevisions": 2,
+      "reviewLevel": "cross_family_review_if_possible"
+    }
+  },
+  "dispatch": {
+    "strategy": "named_subagents_with_explicit_model_parameter",
+    "mainConversationModelSwitch": "not_used",
+    "agentDefinitionPaths": [
+      "~/.workbuddy/agents",
+      "~/.codebuddy/agents",
+      "<workspace>/.codebuddy/agents"
+    ],
+    "explicitModelParameterRequired": true,
+    "parallelIndependentTasks": "同一批调度中并行启动",
+    "dependentTasks": "通过共享任务列表依赖解除阻塞后启动",
+    "revisionReuse": "同一作者返修可恢复 agentId",
+    "reviewerContext": "独立复核必须启动全新上下文",
+    "evidenceFields": ["agentId", "taskId", "agentName", "requestedModelId", "actualModelEvidence", "inputHashes", "rawOutput", "artifactHashes"],
+    "forbidden": ["当前会话逐轮手动切换模型", "提示词自称模型", "Auto 固定岗位", "外部模型端点", "静默自动回退"]
+  },
+  "reviewPolicy": {
+    "defaultReviewerRole": "business_reviewer",
+    "defaultReviewerModelId": "hy4free",
+    "excludeAuthorFamilies": true,
+    "candidateRoleOrder": [
+      "long_context_deep_checker",
+      "office_data_executor",
+      "sol_controller",
+      "requirements_analyst",
+      "chinese_writer"
+    ],
+    "noEligibleFamilyAction": "降级为 context_review，明确披露且不宣称 cross_family_review"
+  },
+  "backupModels": {
+    "Moonshot Kimi": ["kimi-k3-1"],
+    "Zhipu GLM": ["glm-5.2"],
+    "DeepSeek": ["deepseek-v4-pro"],
+    "MiniMax": ["minimax-m2.7"],
+    "Tencent Hunyuan": ["hy4std", "hy3", "hy3-x"]
+  },
+  "executionRules": [
+    "只通过 WorkBuddy 原生会话、专家或子代理调用模型",
+    "派发时显式传入 modelId，不能只依赖子代理 frontmatter",
+    "启动前核对模型目录，禁止 custom-local 或自定义 API 模型",
+    "模型不可用时停止路线并请求用户确认，不静默替换",
+    "记录请求模型与实际模型证据，缺证据时标记 unknown",
+    "不使用 API Key、供应商 SDK、Token Plan、自定义 API 或外部模型端点"
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "schema": 1,
+  "version": "1.0.0",
+  "generatedAt": "2026-11-09T10:21:31Z",
+  "files": {
+    ".gitignore": {
+      "sha256": "0a8249f7d22c857298cb15401d18c1bb8a026233b38465480a94d543742ad3e5",
+      "bytes": 129
+    },
+    "CHANGELOG.md": {
+      "sha256": "174ea7922061ef849ac64500001846332234164f61707718dc9738e13ebacb5f",
+      "bytes": 415
+    },
+    "config/model-catalog.json": {
+      "sha256": "32d5b264a160e0dacb2c0ca32f7733d46ab6c66fb2207d1411b80b388aabf364",
+      "bytes": 5162
+    },
+    "config/model-map.json": {
+      "sha256": "ce13b638d0e2dba133f38baab901b902ff242015e6c591fe70de4fad63f214f8",
+      "bytes": 6982
+    },
+    "CONTRIBUTING.md": {
+      "sha256": "b75f689096116162f6a06fd8b46ad15418cc436f107ac54828017176c7a1436a",
+      "bytes": 526
+    },
+    "DESIGN_SPEC.md": {
+      "sha256": "94043377728428bd1282839d40d6f3ebc9079f2d9cf2166100d18edc16d5dacf",
+      "bytes": 7027
+    },
+    "docs/BENCHMARK.md": {
+      "sha256": "baef5fc40ddc3853427f0ca3f23053e942e78f76d9b067188d1694f8956a8b23",
+      "bytes": 795
+    },
+    "docs/INSTALL.md": {
+      "sha256": "ed57de67398f4e5de412a5b50212e8f27839cb3dcb18668a2c78b62c7d37ae29",
+      "bytes": 1329
+    },
+    "docs/LESSONS.md": {
+      "sha256": "e00faf683599c9ec92b2d3c153d78ae7c34c44d0375b94351437acb899e24e16",
+      "bytes": 948
+    },
+    "docs/LIMITATIONS.md": {
+      "sha256": "e7518cd670567b6ace94a61c7d63a6f640795d7cda10dbef421cf09a84bb040d",
+      "bytes": 918
+    },
+    "docs/RUNTIME_NOTES.md": {
+      "sha256": "24b40e82f61c74e4eb90a9bf14c3fb62c15ca1e1491edc0b574311fd84c3441c",
+      "bytes": 419
+    },
+    "docs/USAGE.md": {
+      "sha256": "de8fc67fc530d170c805baa20efd886d91e18c3de51680f38a3e22f8fa56c5ec",
+      "bytes": 1062
+    },
+    "examples/agents/cli/xiezhi-analyst.md": {
+      "sha256": "df4111c85767eb5523b783d24c520a453705ad7a6959a4e4a417725a2b0f9df3",
+      "bytes": 949
+    },
+    "examples/agents/cli/xiezhi-business-reviewer.md": {
+      "sha256": "bacd5550338ca3fc5e6d9cc6438dbd7576bfcdd252c82c6f8146a5de2357dc4e",
+      "bytes": 923
+    },
+    "examples/agents/cli/xiezhi-chinese.md": {
+      "sha256": "a0dedb93cb7b6575096cf145e05ddf31b8904a796788dca1beec73c0e47212a1",
+      "bytes": 929
+    },
+    "examples/agents/cli/xiezhi-coding.md": {
+      "sha256": "ee7ffe017ba975eee1c44a1525d5016b38e0b466a9c341b29e35dd4a843c8005",
+      "bytes": 947
+    },
+    "examples/agents/cli/xiezhi-deep-checker.md": {
+      "sha256": "b5e017d753d2bef50fee8000d0236115b20bfe06db4563852368e1762548aa64",
+      "bytes": 977
+    },
+    "examples/agents/cli/xiezhi-fast.md": {
+      "sha256": "01cd60dbbed5e3c105b9fe72800c7dc45db9f32e57fe8c273c4f9e760adedf02",
+      "bytes": 948
+    },
+    "examples/agents/cli/xiezhi-multimodal-reviewer.md": {
+      "sha256": "f136a8b67d8c1fa262f6edb8da307031dbc70fcfa2a7ecaed93a00a3f19467a4",
+      "bytes": 980
+    },
+    "examples/agents/cli/xiezhi-office.md": {
+      "sha256": "a063b9e4c1d8d1a19000324f044ea9113177118ad0bf18e495a6278c2dae63f8",
+      "bytes": 967
+    },
+    "examples/agents/cli/xiezhi-router.md": {
+      "sha256": "fb8dca63a91d07b6615c3da74191decfc5442e5c0b3d93b223587f458ff0566a",
+      "bytes": 923
+    },
+    "examples/agents/cli/xiezhi-sol.md": {
+      "sha256": "8d7eb971f2d79d0643a42bc2bd70e2e6c4a567cdcfdfe707a619b19dceb9bf05",
+      "bytes": 940
+    },
+    "examples/agents/cli/xiezhi-visual.md": {
+      "sha256": "3e935538ef509a7f27fa7b6517b404d99cf97683ce56ace7237023b6b8044c66",
+      "bytes": 976
+    },
+    "examples/agents/README.md": {
+      "sha256": "3bee7034977638ca626d234ec2b795ed9245a35acd04ad3b669f16f1d44eaa36",
+      "bytes": 439
+    },
+    "examples/agents/workbuddy/xiezhi-analyst.md": {
+      "sha256": "5b85b67146f031f1e32c1b17ce724c8047b8f978e428a025b9b612211bc95f9d",
+      "bytes": 1102
+    },
+    "examples/agents/workbuddy/xiezhi-business-reviewer.md": {
+      "sha256": "40dc165977ceee9f2c0efd16c047e6b7155c86d5bd24dfc89ca321faab1ad9ca",
+      "bytes": 1091
+    },
+    "examples/agents/workbuddy/xiezhi-chinese.md": {
+      "sha256": "1cabe0f9f275104bea4fd270e64c47e150c79a50ad6fba13363350e95be61ea8",
+      "bytes": 1078
+    },
+    "examples/agents/workbuddy/xiezhi-coding.md": {
+      "sha256": "374da31eceffdffa2dd83d762e72c552a8fe692609a803980ac5909f99be4492",
+      "bytes": 1108
+    },
+    "examples/agents/workbuddy/xiezhi-deep-checker.md": {
+      "sha256": "f1297d881b3a21db15b81181896117277ef2871d6b19a9b39405901acbbce625",
+      "bytes": 1148
+    },
+    "examples/agents/workbuddy/xiezhi-fast.md": {
+      "sha256": "107fcf8f0a44c7d2d585774718eb5654f6297667e4e0b7ae8269cd6d74721ae4",
+      "bytes": 1107
+    },
+    "examples/agents/workbuddy/xiezhi-multimodal-reviewer.md": {
+      "sha256": "0d739c5707293cfde283dec1e8013d83b1d82cfa7a16b0dad2b5968ddb675fd4",
+      "bytes": 1152
+    },
+    "examples/agents/workbuddy/xiezhi-office.md": {
+      "sha256": "bd4bb158e9d3216c1f3b20f46943de26bc0af81e1bc273d9cde7de5c84334b23",
+      "bytes": 1139
+    },
+    "examples/agents/workbuddy/xiezhi-router.md": {
+      "sha256": "cd56a5202899c71b7c73d06265b46498b80548f28f424ee3f38b7cf1fdaa3e56",
+      "bytes": 1078
+    },
+    "examples/agents/workbuddy/xiezhi-sol.md": {
+      "sha256": "ea6e2b054c708d736321bbbf2d86c285abe839efab1a616ef8ead7b4870e3f27",
+      "bytes": 1095
+    },
+    "examples/agents/workbuddy/xiezhi-visual.md": {
+      "sha256": "1c90c5ec4134b650d8398e07a89fe0848ddbd3cf5837998c8caba69bc874e167",
+      "bytes": 1150
+    },
+    "examples/expert-package/.codebuddy-plugin/plugin.json": {
+      "sha256": "ecd8fd331de5f86edcd9f5a7633b620eef2429b5752677fb2be9986631465b63",
+      "bytes": 1953
+    },
+    "examples/expert-package/agents/xiezhi-engine.md": {
+      "sha256": "2e39660193fd51e7312a6a45e6763c9d5f69b263784eedf74c3c82646907bde0",
+      "bytes": 3181
+    },
+    "examples/expert-package/avatars/README.md": {
+      "sha256": "e4732ba28d65c1e0db6068e5b07327128d1ff5e86c986cf0d08c6af3e3bed964",
+      "bytes": 223
+    },
+    "examples/expert-package/README.md": {
+      "sha256": "195000b7f7c4b4ef272089635179bf28880e575021a1cf456ef7cdb246506e3a",
+      "bytes": 443
+    },
+    "LICENSE": {
+      "sha256": "2723ee089fdd78984ecefab5d4c4b3842db1ebfe67f3a612073fb138bae1980d",
+      "bytes": 1104
+    },
+    "NOTICE.md": {
+      "sha256": "5c9d21b4f8be92368c54b61a078c6c9a33ebd54e1141206da27a7486fa58797b",
+      "bytes": 494
+    },
+    "README.md": {
+      "sha256": "3e922eba849a022f23ba1153df9acf0413c226eb92f686d9770d03fee6d855b6",
+      "bytes": 3999
+    },
+    "runtime/benchmark.py": {
+      "sha256": "163595c39666a64bab4da756f86e9d1dcbdc85397895f9b3784e5ebce38ed2ac",
+      "bytes": 10139
+    },
+    "runtime/install.py": {
+      "sha256": "d9de7fcd0191c25e94b90068fb32fb4777dcd356e07208f9ae98ead1cf6c0a9b",
+      "bytes": 8358
+    },
+    "runtime/smoke.py": {
+      "sha256": "1211687b261f40c509f0beda29ae0f31b1827b358a4058a357e6d82bd1d07a5e",
+      "bytes": 7760
+    },
+    "runtime/xiezhi.py": {
+      "sha256": "225553d41c4929f58776dcabf3712386da4e51fd309bcd7581066663521bf1ea",
+      "bytes": 53722
+    },
+    "scripts/verify_redaction.py": {
+      "sha256": "2447437f1343aeb32aeeb88eeeb81a5dcf2e55359f8f18da8eca1ed3495286ba",
+      "bytes": 1810
+    },
+    "SECURITY.md": {
+      "sha256": "c3bfbb768c2ec8dcf4ef88c67a3081a2a0651991e0a6108ceabf54c593a5a309",
+      "bytes": 837
+    },
+    "skill/references/independence.md": {
+      "sha256": "f76e576773b774db4acab70857149df011a8a5dc5c7126a103330e11fb38f654",
+      "bytes": 2999
+    },
+    "skill/references/receipt-contract.md": {
+      "sha256": "993f20d18fbe005465966217710fba82d35b1ad37a2ae1fc1c2ac98058252cc6",
+      "bytes": 4583
+    },
+    "skill/references/troubleshooting.md": {
+      "sha256": "6533d86de1527ebc363ad917e45fb83617bced5f3a635f8849389912135fdb58",
+      "bytes": 4114
+    },
+    "skill/references/workflow.md": {
+      "sha256": "b9dc6fee80106ea86a1754589f92fe949dce64ac159e573ad03a8f4b0d0cfdc3",
+      "bytes": 5221
+    },
+    "skill/SKILL.md": {
+      "sha256": "39b950633f72c7c947630519c2cfddc5c22f8d3aa9c19aa6fff1c30fc8473349",
+      "bytes": 10260
+    },
+    "tests/test_xiezhi.py": {
+      "sha256": "ee075b1596776e0931917e25da36b070b28b1a6b8e86cdc34b95a9b91398b081",
+      "bytes": 27674
+    }
+  }
+}

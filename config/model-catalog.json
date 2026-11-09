@@ -1,0 +1,153 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-11-09T16:10:00+08:00",
+  "source": "WorkBuddy built-in model catalog snapshot",
+  "policy": "只允许 builtin=true 的模型；排除 custom-local:*、自定义 API 模型和 Auto/fast/balanced/deep 自动档位",
+  "models": {
+    "kimi-k3.1-pro": {
+      "displayName": "Kimi-K3.1-Pro",
+      "family": "Moonshot Kimi",
+      "builtin": true,
+      "supportsImages": true,
+      "supportsToolCall": true,
+      "supportsReasoning": true,
+      "maxInputTokens": 1000000,
+      "strength": "复杂长程 Agent、100 万上下文、代码、金融研究与长文档处理"
+    },
+    "kimi-k2.8-preview": {
+      "displayName": "Kimi-K2.8-Preview",
+      "family": "Moonshot Kimi",
+      "builtin": true,
+      "supportsImages": true,
+      "supportsToolCall": true,
+      "supportsReasoning": true,
+      "maxInputTokens": 1000000,
+      "strength": "长文阅读、代码生成与多模态日常任务"
+    },
+    "kimi-k3-1": {
+      "displayName": "Kimi-K3",
+      "family": "Moonshot Kimi",
+      "builtin": true,
+      "supportsImages": true,
+      "supportsToolCall": true,
+      "supportsReasoning": true,
+      "maxInputTokens": 1000000,
+      "strength": "复杂长程自主任务、前端开发、知识工作与科研推理"
+    },
+    "glm-5.3": {
+      "displayName": "GLM-5.3",
+      "family": "Zhipu GLM",
+      "builtin": true,
+      "supportsImages": true,
+      "supportsToolCall": true,
+      "supportsReasoning": true,
+      "maxInputTokens": 1000000,
+      "strength": "新一代 1M 上下文、多步骤长流程与复杂分析"
+    },
+    "glm-5.3-flash": {
+      "displayName": "GLM-5.3-Flash",
+      "family": "Zhipu GLM",
+      "builtin": true,
+      "supportsImages": true,
+      "supportsToolCall": true,
+      "supportsReasoning": true,
+      "maxInputTokens": 1000000,
+      "strength": "新一代快速版本，适合高频路由、交接与结构化汇总"
+    },
+    "glm-5.2": {
+      "displayName": "GLM-5.2",
+      "family": "Zhipu GLM",
+      "builtin": true,
+      "supportsImages": true,
+      "supportsToolCall": true,
+      "supportsReasoning": true,
+      "maxInputTokens": 1000000,
+      "strength": "长上下文与长程任务，旧流程兼容"
+    },
+    "deepseek-v4.1-flash": {
+      "displayName": "DeepSeek-V4.1-Flash",
+      "family": "DeepSeek",
+      "builtin": true,
+      "supportsImages": true,
+      "supportsToolCall": true,
+      "supportsReasoning": true,
+      "maxInputTokens": 1000000,
+      "strength": "速度优先、低消耗、日常问答、短文案与明确短任务"
+    },
+    "deepseek-v4-pro": {
+      "displayName": "DeepSeek-V4-Pro",
+      "family": "DeepSeek",
+      "builtin": true,
+      "supportsImages": true,
+      "supportsToolCall": true,
+      "supportsReasoning": true,
+      "maxInputTokens": 1000000,
+      "strength": "深度推理、复杂证据检查、长材料与来源一致性"
+    },
+    "minimax-m3.1-flash": {
+      "displayName": "MiniMax-M3.1-Flash",
+      "family": "MiniMax",
+      "builtin": true,
+      "supportsImages": true,
+      "supportsToolCall": true,
+      "supportsReasoning": true,
+      "maxInputTokens": 1000000,
+      "strength": "原生多模态、Excel、数据分析、PPT、代码与智能体任务"
+    },
+    "minimax-m2.7": {
+      "displayName": "MiniMax-M2.7",
+      "family": "MiniMax",
+      "builtin": true,
+      "supportsImages": true,
+      "supportsToolCall": true,
+      "supportsReasoning": true,
+      "maxInputTokens": 200000,
+      "strength": "日常均衡任务与性价比备用"
+    },
+    "hy4free": {
+      "displayName": "Hy4",
+      "family": "Tencent Hunyuan",
+      "builtin": true,
+      "supportsImages": true,
+      "supportsToolCall": true,
+      "supportsReasoning": true,
+      "maxInputTokens": 960000,
+      "strength": "中文写作、会议纪要、中文文档、思考模式与免费档"
+    },
+    "hy4std": {
+      "displayName": "Hy4",
+      "family": "Tencent Hunyuan",
+      "builtin": true,
+      "supportsImages": true,
+      "supportsToolCall": true,
+      "supportsReasoning": true,
+      "maxInputTokens": 960000,
+      "strength": "混元标准档，中文办公与增强推理"
+    },
+    "hy3": {
+      "displayName": "Hy3",
+      "family": "Tencent Hunyuan",
+      "builtin": true,
+      "supportsImages": true,
+      "supportsToolCall": true,
+      "supportsReasoning": true,
+      "maxInputTokens": 192000,
+      "strength": "混元思考模型与旧流程兼容"
+    },
+    "hy3-x": {
+      "displayName": "Hy3",
+      "family": "Tencent Hunyuan",
+      "builtin": true,
+      "supportsImages": true,
+      "supportsToolCall": true,
+      "supportsReasoning": true,
+      "maxInputTokens": 192000,
+      "strength": "混元稳定备用"
+    }
+  },
+  "excluded": {
+    "customLocalPrefix": "custom-local:",
+    "autoTiers": ["Auto", "fast-model", "balanced-model", "deep-model"],
+    "reason": "自定义模型可能使用外部 API Key；自动档位无法证明固定模型路由"
+  }
+}

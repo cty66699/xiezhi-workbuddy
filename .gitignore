@@ -1,0 +1,12 @@
+runs/
+dist/
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.log
+*.zip
+.workbuddy/
+.codebuddy/
+models.json
+xiezhi-engine-install.json
