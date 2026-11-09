@@ -17,6 +17,24 @@ Xiezhi Engine uses **only WorkBuddy built-in credit-based models**. It does not 
 - Bounded repair and no silent model fallback.
 - Single-file, printable HTML run report.
 - No external model API, API key, Token Plan, or `custom-local:*` model.
+- One-prompt WorkBuddy deployment via `scripts/bootstrap.py`.
+
+## One-prompt deployment
+
+A bare repository URL is not enough: WorkBuddy also needs an explicit install instruction. Copy this into your WorkBuddy:
+
+```text
+请把这个 GitHub 仓库部署到我的 WorkBuddy：
+https://github.com/cty66699/xiezhi-workbuddy
+
+请克隆仓库，进入仓库目录，运行：
+python scripts/bootstrap.py --workspace . --yes
+
+只写入 WorkBuddy/CodeBuddy 用户配置中与 xiezhi-engine 相关的目录；不要修改其他配置。
+完成后运行仓库内的 preflight 和 scripts/verify_redaction.py，告诉我重启 WorkBuddy 后如何召唤“协智引擎”。
+```
+
+`bootstrap.py` installs the Skill, 11 named subagents, an optional Agent-type expert entry, a local marketplace registration, adapted model IDs, and runs preflight. See `ONE_PROMPT_DEPLOY.md` for the full contract.
 
 ## Default model roles
 
@@ -50,14 +68,13 @@ The report is written to `runs/<RUN_ID>/report.html`.
 
 ## Installation
 
-See `docs/INSTALL.md`. In short:
+Recommended: use the one-prompt deployment above, or run directly from a cloned repository:
 
-1. Install `skill/xiezhi-engine` as a user-level WorkBuddy Skill.
-2. Install the example agent definitions under `examples/agents/`.
-3. Restart WorkBuddy so custom subagents are loaded.
-4. Run `preflight` and resolve any unavailable model IDs.
+```bash
+python scripts/bootstrap.py --workspace . --yes
+```
 
-An optional Agent-type expert package example is provided under `examples/expert-package/`.
+Then restart WorkBuddy. Manual installation steps and path details are in `docs/INSTALL.md`; the optional Agent-type expert package example is under `examples/expert-package/`.
 
 ## Repository contents
 
@@ -70,7 +87,9 @@ An optional Agent-type expert package example is provided under `examples/expert
 | `examples/agents/` | CLI and WorkBuddy agent definition examples |
 | `examples/expert-package/` | Optional desktop expert entry example |
 | `docs/` | Installation, usage, limitations, benchmark, lessons |
+| `scripts/bootstrap.py` | One-command deployment into WorkBuddy user configuration |
 | `scripts/verify_redaction.py` | Re-check that no sensitive patterns remain |
+| `ONE_PROMPT_DEPLOY.md` | Exact prompt to give WorkBuddy for automatic deployment |
 | `SANITIZATION.md` | Release sanitization report |
 
 ## Privacy and safety

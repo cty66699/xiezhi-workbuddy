@@ -6,6 +6,27 @@
 - Python 3.10+
 - No external model API key
 
+## Recommended: one-command automatic install
+
+From the cloned repository root:
+
+```bash
+python scripts/bootstrap.py --workspace . --yes
+```
+
+This installs the Skill, WorkBuddy/CodeBuddy named subagents, project-level subagents, the optional Agent-type expert entry, local marketplace registration, and an install manifest. It also attempts to discover local built-in model IDs and runs `preflight` automatically.
+
+Useful options:
+
+- `--config-dir <path>`: override `<WORKBUDDY_CONFIG_DIR>`.
+- `--codebuddy-dir <path>`: override `~/.codebuddy`.
+- `--workspace <path>`: also install project-level `.codebuddy/agents`.
+- `--skip-expert`: skip the desktop expert entry.
+- `--no-model-discovery`: use the bundled model snapshot.
+- `--run-tests`: run the unittest suite after installation.
+
+Restart WorkBuddy after installation. The manual steps below are provided for reference or troubleshooting.
+
 ## 1. Install the Skill
 
 Copy `skill/` to:

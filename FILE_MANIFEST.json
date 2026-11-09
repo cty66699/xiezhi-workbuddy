@@ -1,23 +1,23 @@
 {
   "schema": 1,
-  "version": "1.0.0",
-  "generatedAt": "2026-11-09T10:21:31Z",
+  "version": "1.1.0",
+  "generatedAt": "2026-11-09T10:54:57Z",
   "files": {
     ".gitignore": {
       "sha256": "0a8249f7d22c857298cb15401d18c1bb8a026233b38465480a94d543742ad3e5",
       "bytes": 129
     },
     "CHANGELOG.md": {
-      "sha256": "174ea7922061ef849ac64500001846332234164f61707718dc9738e13ebacb5f",
-      "bytes": 415
+      "sha256": "deb3e711fc27c13538abd4b604b6a402847635ce3abe9c504486406dd98d4aee",
+      "bytes": 1025
     },
     "config/model-catalog.json": {
       "sha256": "32d5b264a160e0dacb2c0ca32f7733d46ab6c66fb2207d1411b80b388aabf364",
       "bytes": 5162
     },
     "config/model-map.json": {
-      "sha256": "ce13b638d0e2dba133f38baab901b902ff242015e6c591fe70de4fad63f214f8",
-      "bytes": 6982
+      "sha256": "de1085c2626d67c81ff57d51edc0e0cd49c9a0d7182702dc085bcd91c14d378b",
+      "bytes": 7062
     },
     "CONTRIBUTING.md": {
       "sha256": "b75f689096116162f6a06fd8b46ad15418cc436f107ac54828017176c7a1436a",
@@ -32,8 +32,8 @@
       "bytes": 795
     },
     "docs/INSTALL.md": {
-      "sha256": "ed57de67398f4e5de412a5b50212e8f27839cb3dcb18668a2c78b62c7d37ae29",
-      "bytes": 1329
+      "sha256": "63c09a4e69ab71d9a5dd2084a534588a8b04a330c56cdf605bd058d5d7360ebc",
+      "bytes": 2245
     },
     "docs/LESSONS.md": {
       "sha256": "e00faf683599c9ec92b2d3c153d78ae7c34c44d0375b94351437acb899e24e16",
@@ -167,9 +167,13 @@
       "sha256": "5c9d21b4f8be92368c54b61a078c6c9a33ebd54e1141206da27a7486fa58797b",
       "bytes": 494
     },
+    "ONE_PROMPT_DEPLOY.md": {
+      "sha256": "bc74480813bc6111a9a431fc6797cf3661d0d1eac112281d741adc61f0a22edc",
+      "bytes": 2677
+    },
     "README.md": {
-      "sha256": "3e922eba849a022f23ba1153df9acf0413c226eb92f686d9770d03fee6d855b6",
-      "bytes": 3999
+      "sha256": "804bff9001fbdf1147c836cb603d9392c2397afd44c2cfc7747986b8be390d11",
+      "bytes": 5032
     },
     "runtime/benchmark.py": {
       "sha256": "163595c39666a64bab4da756f86e9d1dcbdc85397895f9b3784e5ebce38ed2ac",
@@ -184,12 +188,16 @@
       "bytes": 7760
     },
     "runtime/xiezhi.py": {
-      "sha256": "225553d41c4929f58776dcabf3712386da4e51fd309bcd7581066663521bf1ea",
-      "bytes": 53722
+      "sha256": "c1df7dd0d1a773a690bdc34eff880524c063c82e17e1d395319932589c07daa3",
+      "bytes": 54090
+    },
+    "scripts/bootstrap.py": {
+      "sha256": "6bc99c5f7ed2f05e94baa42b8d91fbf6df25f09a8ada0e2510997a8420d4f62a",
+      "bytes": 20918
     },
     "scripts/verify_redaction.py": {
-      "sha256": "2447437f1343aeb32aeeb88eeeb81a5dcf2e55359f8f18da8eca1ed3495286ba",
-      "bytes": 1810
+      "sha256": "1e81183a46fd3d4b9196d3fc2a4b584c1ca65f4e0be5e2f278d403210dd2444b",
+      "bytes": 1884
     },
     "SECURITY.md": {
       "sha256": "c3bfbb768c2ec8dcf4ef88c67a3081a2a0651991e0a6108ceabf54c593a5a309",

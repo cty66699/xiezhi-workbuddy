@@ -6,7 +6,8 @@ from pathlib import Path
 PATTERNS = [
     ("windows_user_path", r"(?i)[CD]:[\\/]+(?:Users|CDriveMoved)"),
     ("email", r"[A-Za-z0-9._%+-]+@(?:qq\.com|agent\.qq\.com|workbuddy)"),
-    ("account_id", r"(?i)\b(?:2547358413|xzsxslywsrnlywyh|cty66699)\b"),
+    # Public GitHub repository handles in clone URLs are not private account IDs.
+    ("account_id", r"(?i)\b(?:2547358413|xzsxslywsrnlywyh)\b"),
     ("real_name", r"崔天逸"),
     ("api_key_value", r"sk-[A-Za-z0-9_-]{20,}"),
     ("provider_endpoint", r"(?i)ifeasyai|minimaxi\.com|api\.example\.com"),

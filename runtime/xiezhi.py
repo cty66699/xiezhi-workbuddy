@@ -125,9 +125,14 @@ def load_configs(config_dir: Path) -> Tuple[Dict[str, Any], Dict[str, Any]]:
 def _agent_definition_status(model_map: Dict[str, Any]) -> Tuple[List[Path], List[str], List[str]]:
     """在已安装路径中查找各角色的子代理定义文件，返回 (目录, 命中, 缺失)。"""
     raw_paths = model_map.get("dispatch", {}).get("agentDefinitionPaths", [])
+    workbuddy_config = os.environ.get("WORKBUDDY_CONFIG_DIR") or str(Path.home() / ".workbuddy")
+    codebuddy_config = os.environ.get("CODEBUDDY_CONFIG_DIR") or str(Path.home() / ".codebuddy")
     dirs: List[Path] = []
     for raw in raw_paths:
-        expanded = str(raw).replace("<workspace>", str(PROJECT_DIR))
+        expanded = (str(raw)
+                    .replace("<workspace>", str(PROJECT_DIR))
+                    .replace("<WORKBUDDY_CONFIG_DIR>", workbuddy_config)
+                    .replace("<CODEBUDDY_CONFIG_DIR>", codebuddy_config))
         candidate = Path(os.path.expanduser(expanded))
         if candidate.is_dir():
             dirs.append(candidate)

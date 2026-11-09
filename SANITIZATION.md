@@ -1,8 +1,9 @@
 # Sanitization report
 
-- Generated: 2026-11-09T10:21:31Z
+- Generated: 2026-11-09T10:54:57Z
+- Version: 1.1.0
 - Policy: clean-room whitelist; runtime data, install manifests, local reports, caches, archives and binary avatars excluded
-- Files included: 56
+- Files included: 59
 - Sensitive pattern findings: 0
 - Result: PASSED
 
@@ -19,6 +20,7 @@
 
 - Total sanitized occurrences: 8
 - Categories: local paths, account identifiers, emails, real names, API-key-like strings, provider endpoints, session/agent IDs, real run IDs, placeholder author fields and generated avatar filenames.
+- Public GitHub repository handles in clone URLs are allowed; they are not private account IDs.
 - Raw detection patterns are intentionally not reproduced in this public report.
 
 ## Forbidden-pattern scan

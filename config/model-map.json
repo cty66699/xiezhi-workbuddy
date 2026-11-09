@@ -130,7 +130,9 @@
     "strategy": "named_subagents_with_explicit_model_parameter",
     "mainConversationModelSwitch": "not_used",
     "agentDefinitionPaths": [
+      "<WORKBUDDY_CONFIG_DIR>/agents",
       "~/.workbuddy/agents",
+      "<CODEBUDDY_CONFIG_DIR>/agents",
       "~/.codebuddy/agents",
       "<workspace>/.codebuddy/agents"
     ],
